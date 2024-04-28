@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veterinary Doctor Info</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Veterinary Doctor Information</h1>
+        <form id="vet-info">
+            <label for="doctor-name">Veterinarian Doctor Name (Letters only):</label>
+            <input type="text" id="doctor-name" name="doctor-name" required>
+            <br>
+            <label for="clinic-name">Clinic Name:</label>
+            <input type="text" id="clinic-name" name="clinic-name" required>
+            <br>
+            <label for="phone-number">Phone Number:</label>
+            <input type="tel" id="phone-number" name="phone-number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="XXX-XXX-XXXX">
+            <br>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

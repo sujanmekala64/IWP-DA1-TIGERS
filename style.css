@@ -1,0 +1,456 @@
+body{
+    background-color: black;
+    color: white;
+}
+.no-select {
+    -webkit-user-select: none;  
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.container {
+    position: relative;
+    width: 99vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 2;
+}
+
+.container h1 {
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-size: 5em;
+    font-style: italic;
+}
+.container span{
+    color: red;
+}
+.overlay p{
+    font-size: 1.5em;
+}
+.blur {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    filter: blur(10px);
+}
+
+
+
+.container2 {
+    display: flex;
+    flex-direction: column;
+    background-image: url('/LandingPage/beigeBackground.jpg');
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 99vw;
+    height: 100vh;
+}
+
+.container2 h1 {
+    color: rgb(208, 244, 26);
+    margin-bottom: 5%;
+    font-size: 3em;
+    align-self: start;
+    margin: 40px 80px;
+}
+
+.images-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.image1,
+.image2,
+.image3 {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+    max-width: 420px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    transition: transform .6s ease;
+}
+
+.image1 img,
+.image2 img,
+.image3 img {
+    width: 100%;
+    height: auto;
+}
+
+.image-content {
+    padding: 10px;
+}
+
+.image-content h2 {
+    margin: 0;
+    color: #000;
+}
+
+.image-content p {
+    margin: 5px 0;
+    color: black;
+}
+
+.image1:hover,
+.image2:hover,
+.image3:hover {
+    transform: scale(1.05);
+}
+
+.image1 p,
+.image2 p,
+.image3 p {
+    margin: 5px 0;
+    color: black;
+}
+
+
+a span{
+    text-decoration: none;
+    color: orange;
+}
+
+
+.container3  {
+    display: flex;
+    flex-direction: column;
+    background-image: url('/page3/Tiger.jpg');
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 99vw;
+    height: auto;
+    font-family: OpenSansLight, Helvetica, Arial, sans-serif;    
+    position: relative;
+    margin-bottom: 80px;
+}
+
+.container3 p {
+    margin-bottom: 20px;
+    font-size: 15px;
+    color: #4c1cd1;
+}
+
+.container3 .overlay-text {
+    position: absolute;
+    top: 20%;
+    left: 80%;
+    transform: translate(-60%, -10%);
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    color: black; 
+    max-height: 70%;
+    width: 15%;
+    line-height: 1.5em;
+}
+
+
+
+
+.container4 {
+    background-image: url('LandingPage/page4/background.jpg');
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container4 h1 {
+    text-align: center;
+    font-size: 3em;
+    margin-bottom: 60px;
+}
+
+.pagecontainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.tigerimage {
+    display: flex;
+    align-items: flex-start;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-right: 20px;
+    max-width: 800px;
+    max-height: 600px;
+    height: 450px;
+}
+
+
+.image {
+    padding: 10px;
+}
+
+.facts {
+    list-style: none;
+    padding: 10px;
+    color: #000;
+}
+
+.facts li {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-family: "Open Sans", sans-serif;
+    color: #171717;
+}
+.facts hr{
+    color: #989797;
+    margin-right: 20px;
+}
+.image img {
+    max-width: 350px;
+    height: 300px;
+    border-radius: 10px;
+    margin-top: 40px;
+    margin-right: 20px;
+}
+
+.facts strong{
+    color: #9b9a9a;
+}
+
+.funfact {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-left: 20px; 
+    text-align: center;
+    max-width:  50%;
+    max-height: 600px ;
+    height: 430px;
+}
+
+.funfact img {
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.funfact h1 {
+    color: #000000;
+    margin-bottom: 10px;
+
+}
+
+.funfact hr {
+    width: 80%;
+    margin: 10px auto;
+    border: 1px solid #9b9a9a;
+}
+
+.funfact p {
+    color: #1ae32e ;
+    font-size: 1.2em;
+}
+
+
+
+
+
+.container5 img{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+
+
+.container6 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.blur-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('LandingPage/tigerbackground.png');
+    background-size: cover;
+    background-position: center;
+    filter: blur(5px);
+}
+
+.table-container {
+    position: relative;
+    z-index: 1;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+}
+
+th, td {
+    border: 1px solid black;
+    text-align: center;
+    padding: 8px;
+}
+
+th {
+    background-color: #a4a2a2;
+}
+
+tfoot td {
+    background-color: #a4a2a2;
+}
+
+.moving-picture {
+    position: absolute;
+    top: 20%;
+    left: 20%; 
+    transform: translate(-50%, -50%);
+    animation: movePicture 5s infinite alternate;
+}
+
+@keyframes movePicture {
+    0% { top: 20%; left: 30%; }
+    25% { top: 20%; left: 70%; }
+    50% { top: 80%; left: 70%; }
+    75% { top:80%; left: 30%; }
+    100% { top: 20%; left: 30%; }
+}
+
+
+
+
+.container7 {
+    margin: 20px auto;
+    max-width: 600px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #7c7575;
+}
+
+header h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+label.desc {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+fieldset {
+    border: none;
+}
+
+fieldset legend {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.choice {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="submit"] {
+    background-color: #6b849f;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #548159;
+}
+
+
+
+footer {
+    background-color: #000000;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+footer a{
+    color: white;
+}
+footer p{
+    text-align: center;
+    padding: 20px;
+
+}
+
+#buttons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+#buttons button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #5e5e5e;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#buttons button:hover {
+    background-color: #ffb536;
+}
